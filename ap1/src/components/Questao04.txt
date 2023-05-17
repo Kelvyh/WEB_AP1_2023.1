@@ -1,0 +1,6 @@
+O Props Drilling acontece quando passamos informações para os componentes filhos pelos props que eles não vão
+usar diretamente, considerando que podem haver várias camadas de filhos, o filho que vai utilizar a informação
+pode estar muito distante do componente pai, fazendo com que essa informação se perpetue por vários componentes
+que não irão utiliza-lá. Por exemplo, existe um componente A com uma informação Cor, esse componente possui o
+filho B, e o filho B possui o componente filho C, se eu quero que a informação Cor de A se perpetue até o componente
+C, por props, ele precisa primeiro passar pelo componente filho B, que não precisa da informação.
